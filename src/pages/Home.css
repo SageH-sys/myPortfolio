@@ -1,0 +1,16 @@
+/* src/pages/Home.css */
+.home-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.home-title {
+    color: #333;
+}
+
+.home-text {
+    line-height: 1.6;
+}
