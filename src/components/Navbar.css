@@ -1,6 +1,6 @@
 /* src/components/Navbar.css */
 .navbar {
-    background-color: #fff;
+    background-color: #1E1E1E;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 10px 0;
 }
@@ -20,7 +20,7 @@
 
 .navbar a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-weight: 500;
     transition: color 0.3s ease-in-out, transform 0.3s ease;
     padding: 5px 10px;

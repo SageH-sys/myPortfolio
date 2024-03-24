@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import lottie from 'lottie-web';
 import { useNavigate } from 'react-router-dom';
+import '../App.css';
 
 const SplashScreen = () => {
     const navigate = useNavigate();
@@ -14,7 +15,7 @@ const SplashScreen = () => {
             path: process.env.PUBLIC_URL + '/assets/svg/Animation.json' // Update this path
         });
 
-// When the animation completes, navigate and set the flag
+        // When the animation completes, navigate
         animation.addEventListener('complete', () => {
             setTimeout(() => {
                 navigate('/home');
@@ -24,10 +25,17 @@ const SplashScreen = () => {
         return () => animation.destroy();
     }, [navigate]);
 
-    return <div id="Animation" style={{ width: '100%', height: '100vh' }}></div>;
+    return (
+        <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100vh', // Use full viewport height to center vertically
+            width: '100vw' // Use full viewport width
+        }}>
+            <div id="Animation" style={{ width: '70%', height: '70%' }}></div>
+        </div>
+    );
 };
 
 export default SplashScreen;
-
-
-
