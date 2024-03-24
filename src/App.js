@@ -6,6 +6,9 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import { setCSSVariables } from './theme/theme'; // Adjust the import path as needed
+
+setCSSVariables(); // Set CSS variables when the app loads
 
 function App() {
     return (
