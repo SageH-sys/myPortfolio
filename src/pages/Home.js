@@ -6,8 +6,10 @@ function Home() {
     return (
         <div className="container">
             <h1 className="home-title">Welcome to Heath Sage's Portfolio</h1>
-            <p className="home-text">This is the home page.</p>
+            {/* Add CTA button*/}
+            <a href="/projects" className="projects-cta">View Projects</a>
         </div>
+
     );
 }
 
