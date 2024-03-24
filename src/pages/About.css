@@ -1,0 +1,8 @@
+.about-container {
+    padding: 20px;
+    max-width: 90vw;
+    margin: 20px auto;
+    background-color: #1F1F1F;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
