@@ -90,3 +90,65 @@
   font-size: 5rem;
 }
 
+.about-content {
+  display: flex;
+  flex-direction: column; /* Add this line */
+  align-items: center; /* Add this line */
+  gap: 20px;
+  padding: 20px;
+  height: 100vh;
+  overflow: auto;
+  justify-content: flex-start; /* Add this line to align items to the top */
+  opacity: 0;
+}
+
+.bio, .skills, .contact {
+  background-color: var(--light-color);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills ul li::before {
+  content: "✔ ";
+  color: var(--primary-color);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form input, .contact form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid var(--light-color);
+  border-radius: 5px;
+}
+
+.contact form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
